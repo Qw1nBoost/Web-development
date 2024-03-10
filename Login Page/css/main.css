@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    gap: 60px;
+}
+
+h1 {
+    color: #7A999C;
+    font-family: "Istok Web";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.main-img {
+    height: 100vh;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 125px;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #5F7C8D;
+    font-family: "Istok Web";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.login-btn:active {
+    border-bottom: 3px solid #5F7C8D;
+}
+
+.signup-btn {
+    text-decoration: none;
+    color: rgba(95, 124, 141, 0.39);
+    font-family: "Istok Web";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.signup-btn:active {
+    border-bottom: 3px solid #5F7C8D;
+}
+
+.form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* margin-left: 140px; */
+}
+
+.form span {
+    color: rgba(95, 124, 141, 0.55);
+    font-family: "Istok Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.form-input {
+    width: 100%;
+    color: rgba(95, 124, 141, 0.55);
+    font-family: "Istok Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    border-bottom: 3px solid #5F7C8D;
+    outline: none;
+}
+
+.form-input-email {
+    margin-bottom: 60px;
+}
+
+.form-input-pass {
+    margin-bottom: 60px;
+}
+
+.submit-btn {
+    color: #FFF;
+    font-family: "Istok Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #4B687A;
+    border: none;
+    padding: 10px 185px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}

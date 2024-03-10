@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(6, 26, 44);
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+h1 {
+    color: #fff;
+    padding: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    min-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#text-input {
+    width: 250px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #5a01a7;
+}
+
+#check-btn {
+    width: 90px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #5a01a7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+}
+
+.answer {
+    font-weight: 800;
+    font-size: 30px;
+    color: #5a01a7;
+
+    display: none;
+}
+
+.palindrom-def {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    background-color: #00471b;
+    border-radius: 20px;
+
+    max-width: 450px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.palindrom-def p {
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+
+.palindrom-def p::before {
+    content: "💡";
+}

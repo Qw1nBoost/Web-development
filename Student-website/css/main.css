@@ -1,0 +1,264 @@
+body {
+    background-color: #F4F7FF;
+}
+
+h2 {
+    color: #000;
+    font-size: 36px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    color: #000;
+    font-size: 16px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 110px;
+}
+
+textarea {
+    font-family: "Space Mono";
+    font-size: 16px;
+    width: 439px;
+    height: 191px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+input {
+    font-family: "Space Mono";
+    font-size: 16px;
+    width: 439px;
+    height: 38px;
+    margin-bottom: 24px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+form {
+    margin-top: 31px;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 16px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+    margin-top: 23px;
+    padding: 8px 16px;
+    background-color: #000;
+    font-family: "Space Grotesk";
+    font-size: 16px;
+    color: #F4F7FF;
+    border-radius: 2px;
+}
+
+.container {
+    width: 1270px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    margin-top: 47px;
+    margin-left: 50%;
+    margin-bottom: 24px;
+    transform: translate(-50%, 0);
+}
+
+.line {
+    width: 1270px;
+    height: 1px;
+    background-color: #000;
+}
+
+.author-section {
+    text-align: center;
+    margin-top: 105px;
+}
+
+.mini-logos {
+    width: 80px;
+    margin: 8px auto 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mini-logos img {
+    width: 24px;
+    height: 24px;
+}
+
+.author-name {
+    color: #000;
+    font-size: 64px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.author-section p {
+    margin: 24px auto 0;
+    width: 439px;
+    color: rgba(0, 0, 0, 0.80);
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.base-cont {
+    margin-top: 139px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education {
+    display: flex;
+    width: 589px;
+    padding: 32px 64px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 25px;
+    background: #F4F7FF;
+    box-shadow: 14px 24px 16px 0px rgba(28, 38, 71, 0.05), 3px 4px 4px 0px #FFF inset;
+}
+
+.experience {
+    display: flex;
+    width: 462px;
+    height: 235px;
+    padding: 32px 64px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 25px;
+    background: #F4F7FF;
+    box-shadow: 14px 24px 16px 0px rgba(28, 38, 71, 0.05), 3px 4px 4px 0px #FFF inset;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+}
+
+.year {
+    color: #000;
+    font-size: 16px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.par {
+    color: #000;
+    font-size: 16px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.opacity-par {
+    opacity: 0.5;
+}
+
+.skills-cont {
+    margin-top: 83px;
+}
+
+.skills {
+    width: 1270px;
+    padding: 32px 64px;
+    gap: 10px;
+    border-radius: 25px;
+    background: #F4F7FF;
+    box-shadow: 14px 24px 16px 0px rgba(28, 38, 71, 0.05), 3px 4px 4px 0px #FFF inset;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: 187px 187px 187px 187px 187px 187px;
+    grid-auto-rows: 150px;
+}
+
+.form-cont {
+    margin-top: 83px;
+}
+
+.contact {
+    width: 303px;
+    text-align: center;
+    padding: 32px 64px;
+    margin: 0 auto;
+    gap: 10px;
+    border-radius: 25px;
+    background: #F4F7FF;
+    box-shadow: 14px 24px 16px 0px rgba(28, 38, 71, 0.05), 3px 4px 4px 0px #FFF inset;
+}
+
+.form-wrapper {
+    width: 439px;
+    margin: 0 auto;
+}
+
+.footer-cont {
+    margin-top: 72px;
+    margin-bottom: 52px;
+}
+
+.footer-logos img {
+    width: 16px;
+    height: 16px;
+}
+
+.footer-logos span {
+    margin-top: 11px;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.git-in {
+    margin-top: 11px;
+    width: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+}
