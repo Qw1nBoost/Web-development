@@ -10,7 +10,6 @@ body {
     background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
-    
 }
 
 /* Навигация */
@@ -21,6 +20,35 @@ nav {
     top: 0;
     z-index: 1000;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#3498db, #2ecc71);
+    border-radius: 10px;
+}
+
+#items, .catalog {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 #header {
     display: flex;
@@ -285,56 +313,113 @@ nav {
 
 /* Категории */
 .catalog {
-    display: grid;
-    gap: 15px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
 }
 
 .category {
-    border: 1px solid #eee;
-    border-radius: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
     overflow: hidden;
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
+.category:hover {
+    transform: translateY(-5px);
+}
 .category-header {
-    padding: 15px;
-    background: #f5f5f5;
-    cursor: pointer;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #2c3e50, #4a648f);
+    color: white;
+    font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: none;
 }
 
 .category-header::after {
     content: '+';
-    font-size: 20px;
+    font-size: 22px;
+    transition: transform 0.3s;
 }
 
 .category-header.active::after {
     content: '-';
+    transform: rotate(180deg);
 }
-
 .subcategories {
     list-style: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease-out;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .category.active .subcategories {
     max-height: 500px;
+    padding: 10px 0;
 }
 
 .subcategory {
-    padding: 12px 20px;
-    border-top: 1px solid #eee;
+    padding: 12px 25px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    color: #333;
+    position: relative;
 }
 
 .subcategory:hover {
-    background: #f0f0f0;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    padding-left: 30px;
 }
+
+.subcategory::before {
+    content: '→';
+    margin-right: 10px;
+    color: #e74c3c;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.subcategory:hover::before {
+    opacity: 1;
+    margin-right: 15px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.category.active .subcategory {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.category.active .subcategory:nth-child(1) { animation-delay: 0.1s; }
+.category.active .subcategory:nth-child(2) { animation-delay: 0.2s; }
+.category.active .subcategory:nth-child(3) { animation-delay: 0.3s; }
+.category.active .subcategory:nth-child(4) { animation-delay: 0.4s; }
+.category.active .subcategory:nth-child(5) { animation-delay: 0.5s; }
+.category.active .subcategory:nth-child(6) { animation-delay: 0.6s; }
+.category.active .subcategory:nth-child(7) { animation-delay: 0.7s; }
+.category.active .subcategory:nth-child(8) { animation-delay: 0.8s; }
+.category.active .subcategory:nth-child(9) { animation-delay: 0.9s; }
+.category.active .subcategory:nth-child(10) { animation-delay: 1.0s; }
+.category.active .subcategory:nth-child(11) { animation-delay: 1.1s; }
+.category.active .subcategory:nth-child(12) { animation-delay: 1.2s; }
 
 /* Footer */
 .site-footer {
@@ -398,6 +483,11 @@ nav {
 
 .social-link i {
     margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.social-link:hover i {
+    transform: scale(1.2) rotate(10deg);
 }
 
 .social-link.vk {
