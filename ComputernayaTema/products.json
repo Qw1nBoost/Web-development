@@ -244,6 +244,24 @@
             }
         },
         {
+            "id": "PSU002",
+            "name": "Блок питания Aerocool KCAS-1000M 1000W",
+            "category": "power",
+            "price": "4 999",
+            "oldPrice": "5 799",
+            "description": "Блок питания 1000W, 80+ Bronze, встроенный APFC, мощная шина питания +12 В",
+            "image": "kcas_1000.jpg",
+            "rating": 2.0,
+            "reviews": 69,
+            "specs": {
+                "Мощность": "1000W",
+                "Сертификат": "80+ Bronze",
+                "Разъемы": "1x 20+4-pin, 1x 4+4-pin CPU, 6x PCI-E 6+2, 10x SATA, 6x Molex",
+                "Охлаждение": "140mm гидродинамический",
+                "Защита": "OVP, UVP, OPP, SCP, OTP"
+            }
+        },
+        {
             "id": "CASE001",
             "name": "Корпус NZXT H510 Elite Black",
             "category": "cases",
@@ -333,12 +351,12 @@
         },
         {
             "id": "HEAD001",
-            "name": "Наушники Fefine H6",
+            "name": "Наушники Fifine H6",
             "category": "headphones",
             "price": "3 999",
             "oldPrice": "6 999",
             "description": "Проводная гарнитура Fifine H6 ‒ игровое устройство с несколькими режимами обработки звука",
-            "image": "fefine-h6.jpg",
+            "image": "fifine-h6.jpg",
             "rating": 4.7,
             "reviews": 214,
             "specs": {
